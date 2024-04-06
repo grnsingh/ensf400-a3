@@ -4,11 +4,10 @@ metadata:
   name: app-1-ingress
 spec:
   rules:
-  - host: minikube.local
-    http:
+  - http:
       paths:
       - pathType: Prefix
-        path: "/app1"
+        path: "/"
         backend:
           service:
             name: app-1-service

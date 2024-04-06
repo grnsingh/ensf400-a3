@@ -2,13 +2,15 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-2-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "30"
 spec:
   rules:
-  - host: minikube.local
-    http:
+  - http:
       paths:
       - pathType: Prefix
-        path: "/app2"
+        path: "/"
         backend:
           service:
             name: app-2-service
