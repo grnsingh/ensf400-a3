@@ -5,6 +5,7 @@ metadata:
 data:
   default.conf: |
     upstream backend {
+      # Using default port 80, so users don't have to specify it in the URL instead of recommended 8080
     server app-1-service:80;
     server app-2-service:80;
     }

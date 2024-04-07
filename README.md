@@ -5,9 +5,6 @@ The assignment for me started with the setup of nginx. Faced quite a few issues,
 ## Initial Setup
 
 There were 3 files, that I had added in initially, `nginx-configmap.yaml`, `nginx-svc.yaml` and `nginx-dep.yaml`. Once completed, `nginx-ingress.yaml` was added. 
-
-## Ingress Installation
-
 Took me quite a while to figure out that we need to install ingress first. 
 
 ## Service Creation

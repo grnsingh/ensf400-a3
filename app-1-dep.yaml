@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-# Name of the deployment
   name: app-1-deployment
 spec:
   selector:

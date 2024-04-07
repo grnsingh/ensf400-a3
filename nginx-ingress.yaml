@@ -13,4 +13,5 @@ spec:
           service:
             name: nginx-svc
             port:
+            # Using the default port 80 for incoming requests
               number: 80
